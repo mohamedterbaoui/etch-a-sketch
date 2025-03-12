@@ -3,7 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="description">
+        <h1>Etch-a-Sketch</h1>
+        <form action="">
+          <label for="size">Select the size of the sketchpad:</label>
+          <input type="number" max="100" id="size" />
+          <input type="button" value="Set" id="setSize" />
+          <input type="button" value="Reset" id="reset" />
+          <input type="button" value="Clear" id="clear" />
+        </form>
+      </div>
+
+      <div id="sketchpad-container"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
